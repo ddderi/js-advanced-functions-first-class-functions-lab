@@ -13,7 +13,7 @@ const drivers = ['Sally', 'Bob', 'Freddy', 'Claudia'];
 
 // cest mon essai
 const returnFirstTwoDrivers = () => {
-    const drivers = ['Sally', 'Bob', 'Freddy', 'Claudia'];
+    // const drivers = ['Sally', 'Bob', 'Freddy', 'Claudia'];
     var results = [];
         results.push(drivers[0], drivers[1]);
         
@@ -49,7 +49,7 @@ const returnFirstTwoDrivers = () => {
 
 
 const returnLastTwoDrivers = () => {
-    const drivers = ['Sally', 'Bob', 'Freddy', 'Claudia'];
+    // const drivers = ['Sally', 'Bob', 'Freddy', 'Claudia'];
     var results = [];
         results.push(drivers[2], drivers[3]);
     return results;
@@ -90,7 +90,11 @@ let fareTripler = createFareMultiplier(3);
 
 
 
-function selectDifferentDrivers(selectingDrivers, y){
-    if (y === returnFirstTwoDrivers){return returnFirstTwoDrivers()}
-    else {return returnLastTwoDrivers()};
+// function selectDifferentDrivers(selectingDrivers, y){
+//     if (y === returnFirstTwoDrivers){return returnFirstTwoDrivers()}
+//     else {return returnLastTwoDrivers()};
+// }
+
+let selectDifferentDrivers = (arrayOfDrivers, functionToApply) => {
+    return functionToApply(arrayOfDrivers);
 }
